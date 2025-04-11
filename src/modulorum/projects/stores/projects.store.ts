@@ -44,5 +44,7 @@ export const useProjectsStore = defineStore('projects', () => {
 
         addereProject,
 
+        nonProject: computed(() => projects.value.length === 0 ),
+
     }
 });
